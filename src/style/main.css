@@ -1,0 +1,41 @@
+/*  
+ * main.css
+ *
+ * This is the main css file. It's imported by src/main.js, which 
+ * causes rollup to inject this into the document's head.
+ * Other css files can be imported here using standard css import syntax:
+ *
+ *     @import url("other.css")
+ *
+ */
+
+body {
+   font-family: "Helvetica Neue";
+}
+
+.CodeMirror {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+        
+.CodeMirror-gutters {
+  padding-right: 10px;
+}
+        
+.CodeMirror-foldmarker {
+  color: purple;
+  text-shadow: #b9f 1px 1px 2px, #b9f -1px -1px 2px, #b9f 1px -1px 2px, #b9f -1px 1px 2px;
+  font-family: arial;
+  line-height: .3;
+  cursor: pointer;
+}
+        
+.CodeMirror-foldgutter-open:after {
+  /*Dave: comment out for foldgutter.css to take over:*/
+  content: "\25BE";
+  color: red;
+}
+
+.CodeMirror-foldgutter-folded:after {
+  content: "\2757";
+}

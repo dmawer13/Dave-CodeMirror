@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Dave's CodeMirror.</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+  </head>
+  <body>
+    <h1>CodeMirror Commenter</h1>
+    <div id="editor"></div>
+    <script type="module">
+        import loadEditor from "../dist/bundle.js";
+        const textarea = document.getElementById("editor")
+        loadEditor(textarea)
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+{
+  "name": "dave-codemirror",
+  "version": "1.0.0",
+  "description": "This repo develops a CodeMirror plugin to support transdisciplinary commenting... or something.",
+  "main": "src/main.js",
+  "scripts": {
+    "build": "rollup --config rollup.config.js",
+    "serve": "concurrently \"web-dev-server\" \"rollup --config rollup.config.js --watch\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmawer13/Dave-CodeMirror.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmawer13/Dave-CodeMirror/issues"
+  },
+  "homepage": "https://github.com/dmawer13/Dave-CodeMirror#readme",
+  "dependencies": {
+    "@codemirror/basic-setup": "^0.19.0",
+    "@codemirror/lang-javascript": "^0.19.2",
+    "codemirror": "^5.63.1"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.1.24",
+    "@web/dev-server-rollup": "^0.3.10",
+    "concurrently": "^6.3.0",
+    "rollup": "^2.58.0",
+    "rollup-plugin-postcss": "^4.0.1"
+  }
+}
